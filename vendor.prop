@@ -166,3 +166,6 @@ ro.soc.model=MSM8937
 
 # Time Services
 persist.timed.enable=true
+
+# Zygote
+zygote.critical_window.minute=10
