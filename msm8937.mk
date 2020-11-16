@@ -387,11 +387,11 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
 # Vibrator
-ifneq ($(TARGET_USES_DEVICE_SPECIFIC_VIBRATOR),true)
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
-endif
+    vendor.qti.hardware.vibrator.service
+
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
 
 # VNDK
 PRODUCT_COPY_FILES += \
