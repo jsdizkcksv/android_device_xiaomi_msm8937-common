@@ -61,6 +61,7 @@ persist.camera.isp.clock.optmz=0
 persist.camera.stats.test=5
 vendor.camera.hal1.packagelist=com.facebook.katana,com.facebook.orca,com.instagram.android,com.viber.voip,com.whatsapp
 vidc.enc.dcvs.extra-buff-count=2
+persist.vendor.camera.HAL3.enabled=1
 
 # Charger
 ro.charger.disable_init_blank=true
