@@ -68,6 +68,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.baseband.proxy.rc",
+    src: "etc/init.baseband.proxy.rc",
+    sub_dir: "init",
+    system_ext_specific: true,
+}
+
+prebuilt_etc {
     name: "ueventd.qcom.rc",
     filename: "ueventd.rc",
     src: "etc/ueventd.qcom.rc",
@@ -78,6 +85,7 @@ prebuilt_etc {
 
 sh_binary {
     name: "init.baseband.sh",
+    required: ["init.baseband.proxy.rc"],
     src: "bin/init.baseband.sh",
     vendor: true,
 }
