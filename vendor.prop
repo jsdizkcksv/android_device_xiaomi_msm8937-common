@@ -42,8 +42,6 @@ persist.vendor.audio.fluence.voicerec=false
 ro.vendor.audio.sdk.fluencetype=fluence
 
 # Bluetooth
-bluetooth.hfp.client=1
-persist.vendor.btstack.enable.splita2dp=false
 qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
@@ -62,10 +60,6 @@ persist.camera.stats.test=5
 vendor.camera.hal1.packagelist=com.facebook.katana,com.facebook.orca,com.instagram.android,com.viber.voip,com.whatsapp
 vidc.enc.dcvs.extra-buff-count=2
 persist.vendor.camera.HAL3.enabled=1
-
-# Charger
-ro.charger.disable_init_blank=true
-ro.charger.enable_suspend=true
 
 # CNE
 persist.vendor.cne.feature=1
@@ -119,7 +113,6 @@ debug.stagefright.omx_default_rank=0
 media.aac_51_output_enabled=true
 media.msm8956hw=0
 media.stagefright.audio.sink=280
-vendor.mm.enable.qcom_parser=1048575
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 vendor.vidc.dec.downscalar_height=1088
@@ -164,7 +157,6 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 rild.libargs=-d /dev/smd0
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
-ril.subscription.types=NV,RUIM
 ro.telephony.default_network=33,33
 service.qti.ims.enabled=1
 telephony.lteOnCdmaDevice=1
