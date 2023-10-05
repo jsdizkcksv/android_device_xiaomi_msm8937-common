@@ -128,7 +128,7 @@ PRODUCT_PACKAGES += \
     camera.msm8937
 
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++_vendor
 
 # Consumer IR
 ifneq ($(TARGET_HAS_NO_CONSUMERIR),true)
