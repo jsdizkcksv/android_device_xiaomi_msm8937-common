@@ -128,6 +128,7 @@ PRODUCT_PACKAGES += \
     camera.msm8937
 
 PRODUCT_PACKAGES += \
+    libion.vendor \
     libstdc++_vendor
 
 # Consumer IR
@@ -218,6 +219,7 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 PRODUCT_PACKAGES += \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -312,6 +314,8 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libnetutils.vendor:64 \
+    libsqlite.vendor:64 \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
